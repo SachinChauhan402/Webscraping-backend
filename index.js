@@ -10,6 +10,7 @@ const cron = require("node-cron");
 // const router = require("./routers");
 const cors = require("cors");
 db.connect();
+app.use(cors())
 
 app.use(express.json());
 const flipkartData = require("./models/flipkart");
